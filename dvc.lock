@@ -22,8 +22,8 @@ stages:
     deps:
     - path: data/production/labelled.csv
       hash: md5
-      md5: 55f679f06c3ba5e8d052adb456fe7a3c
-      size: 193
+      md5: 766dafe8ceeb123e5c42e7b3cdf39107
+      size: 181
     - path: data/raw/bank-additional-full.csv
       hash: md5
       md5: f6cb2c1256ffe2836b36df321f46e92c
@@ -104,11 +104,11 @@ stages:
     outs:
     - path: models/model.cbm
       hash: md5
-      md5: a64ae22f53ff86b308307dfa8ed7f69d
+      md5: 37d1e4462b29627667c3f3f47b15a6a3
       size: 725360
     - path: run_info.json
       hash: md5
-      md5: 78a17493f1329fc453475a3bb273e57b
+      md5: 2f60f5b12e14158880906b83f842bad0
       size: 112
   evaluate:
     cmd: uv run python -m src.evaluate
@@ -119,7 +119,7 @@ stages:
       size: 757811
     - path: models/model.cbm
       hash: md5
-      md5: a64ae22f53ff86b308307dfa8ed7f69d
+      md5: 37d1e4462b29627667c3f3f47b15a6a3
       size: 725360
     - path: src/evaluate.py
       hash: md5
@@ -139,5 +139,5 @@ stages:
       size: 209
     - path: plots/shap_summary.png
       hash: md5
-      md5: 47cd8616b8e677e1a77a1ae93250fe06
-      size: 76184
+      md5: 61ed63aa41993d58741fb4809c65f79f
+      size: 76627
